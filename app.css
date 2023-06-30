@@ -1,0 +1,177 @@
+body,
+html {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr;
+    font-size: 1.5rem;
+}
+
+main {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-flow: column;
+}
+
+footer {
+    grid-row: 3;
+    grid-column: 1;
+    height: 100px;
+    background-color: black;
+
+}
+
+/*header values*/
+header {
+    grid-row: 1;
+    grid-column: 1;
+    height: 100px;
+    background-color: #0180B5;
+}
+
+.headerimg {
+    position: relative;
+    padding: 0.5rem 15rem;
+}
+
+/*cramps up for some reason
+also not the right font and pos and icons are missing.
+where is it?...*/
+.headerinfo {
+    font-size: large;
+    padding: 0.5rem 15rem;
+    word-spacing: 25px;
+}
+
+.headerinfospecial {
+    word-spacing: 2px;
+}
+
+/*hover feature for the links*/
+a:hover {
+    text-decoration: underline;
+}
+
+main>div {
+    flex-shrink: 0;
+}
+
+/*overall color of the background*/
+.blue_background {
+    background-color: #0180B5;
+}
+
+* {
+    color: white;
+}
+
+/*properties of the background img and information*/
+.block_one {
+    background-image: url(/assets/zaehne_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 1035px;
+    background-position-y: 0px;
+    background-size: 45%;
+    padding: 0rem 15rem;
+}
+
+/*coordinates of the information*/
+.block_one>.information {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 2fr;
+    padding: 10rem 0rem;
+}
+
+.block_one>.information>div {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+/*proberties of the img in the information block*/
+.block_one>.information>img {
+    height: 30rem;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    right: -100px;
+    top: 20px;
+}
+/*img row proberties*/
+.block_sec_img1 {
+    height: 35rem;
+    position: relative;
+    opacity: 0.5;
+  }
+
+.block_sec_img2 {
+    height: 35rem;
+    position: relative;
+    opacity: 0.5;
+}
+
+.block_sec_img3 {
+    height: 35rem;
+    position: relative;
+    opacity: 0.5;
+}
+.textoverlay1
+{
+    position: relative;
+    color: white;
+    font-size: 50px;
+}
+.textoverlay2
+{
+    position: relative;
+    color: white;
+    font-size: 50px;
+}
+.curriculum
+{
+    display: grid;
+    position: relative;
+}
+
+/*changes all links*/
+a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*changes the values of declared fonts*/
+.custom_small_font {
+    font-size: 14px;
+}
+
+.custom_medium_font {
+    font-size: 17px;
+}
+
+.justified_text {
+    text-align: justify;
+}
+
+.transparent_text {
+    color: hsla(0, 100%, 100%, 0.8);
+}
+
+.center_text {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
