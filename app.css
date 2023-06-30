@@ -37,13 +37,19 @@ footer {
 header {
     grid-row: 1;
     grid-column: 1;
-    height: 100px;
+    display: grid;
+    grid-template-columns: min-content 1fr auto;
+    grid-template-rows: 1fr;
+    align-items: center;
     background-color: #0180B5;
+    padding: 2rem 15rem;
+    gap: 2rem;
 }
 
 .headerimg {
     position: relative;
-    padding: 0.5rem 15rem;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 /*cramps up for some reason
@@ -51,8 +57,9 @@ also not the right font and pos and icons are missing.
 where is it?...*/
 .headerinfo {
     font-size: large;
-    padding: 0.5rem 15rem;
     word-spacing: 25px;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .headerinfospecial {
@@ -81,9 +88,9 @@ main>div {
 .block_one {
     background-image: url(/assets/zaehne_bg.png);
     background-repeat: no-repeat;
-    background-position-x: 1035px;
-    background-position-y: 0px;
-    background-size: 45%;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: contain;
     padding: 0rem 15rem;
 }
 
@@ -110,35 +117,6 @@ main>div {
     top: 20px;
 }
 /*img row proberties*/
-.block_sec_img1 {
-    height: 35rem;
-    position: relative;
-    opacity: 0.5;
-  }
-
-.block_sec_img2 {
-    height: 35rem;
-    position: relative;
-    opacity: 0.5;
-}
-
-.block_sec_img3 {
-    height: 35rem;
-    position: relative;
-    opacity: 0.5;
-}
-.textoverlay1
-{
-    position: relative;
-    color: white;
-    font-size: 50px;
-}
-.textoverlay2
-{
-    position: relative;
-    color: white;
-    font-size: 50px;
-}
 .curriculum
 {
     position: relative;
@@ -174,3 +152,65 @@ a {
 .uppercase {
     text-transform: uppercase;
 }
+
+.block_two {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 8rem;
+}
+
+.block_two > * {
+    text-align: center;
+}
+
+.block_two > .carousel 
+{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;  
+    overflow: hidden;
+}
+
+.block_two > .carousel > a {
+    width: 100%; 
+    aspect-ratio: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.block_two > .carousel > a:hover
+{
+    background-color: orange;
+}
+.block_two > .carousel > a:hover .hidden
+{
+    display: inline;
+}
+.block_two > .carousel > a > img
+{
+    opacity: 50%;
+    width: 100%;
+    height: 100%;
+}
+.block_two > .carousel > a > *
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+.block_two > .carousel > a > span
+{
+    z-index: 1000;
+}
+.hidden
+{
+    display: none;
+}
+h4
+{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
