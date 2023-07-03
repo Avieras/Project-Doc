@@ -28,9 +28,8 @@ main {
 footer {
     grid-row: 3;
     grid-column: 1;
-    height: 100px;
+    min-height: 100px;
     background-color: #222222;
-
 }
 
 /*header values*/
@@ -282,7 +281,7 @@ a {
     z-index: 1000;
 }
 
-.block_four>.imgalignment>a {
+.block_four > .imgalignment > a {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -296,32 +295,36 @@ a {
     display: flex;
     flex-flow: column;
     gap: 1rem;
-    padding: 0rem;
-    flex-grow: 1;
+    padding: 4rem 15rem;
 }
 
-.block_five>.text {
+.block_five h3 {
+    margin: 0;
+}
 
+.block_five p {
+   color: black;
+   font-size: 17px;
+}
+
+.block_five > .text {
     display: grid;
-    padding: 10rem 15rem;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr auto;
     gap: 5rem;
-
 }
 
-.block_five>text>div {
+.block_five > text > div {
     grid-row: 1;
     grid-column: 1;
 }
 
-.block_five>.text>img {
+.block_five > .text > img {
     height: 15rem;
     grid-row: 1;
     grid-column: 2;
     position: relative;
-    aspect-ratio: 5/3;
- 
+    aspect-ratio: 5 / 3;
 }
 
 .blue {
@@ -330,14 +333,11 @@ a {
 
 /*designe of the button*/
 .button {
-    padding: 0rem 9rem;
+    align-self: center;
+    justify-self: center;
     background-color: orange;
     color: #fff;
     border: none;
     cursor: pointer;
-}
-
-.button_pos {
-    align-self: center;
-    justify-self: center;
+    padding: 1rem 2rem;
 }
