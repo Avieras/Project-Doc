@@ -29,8 +29,8 @@ footer {
     grid-row: 3;
     grid-column: 1;
     height: 100px;
-    background-color: black;
-
+    background-color: #222222;
+    
 }
 
 /*header values*/
@@ -52,9 +52,6 @@ header {
     grid-row: 1;
 }
 
-/*cramps up for some reason
-also not the right font and pos and icons are missing.
-where is it?...*/
 .headerinfo {
     font-size: large;
     word-spacing: 25px;
@@ -116,11 +113,6 @@ main>div {
     right: -100px;
     top: 20px;
 }
-/*img row proberties*/
-.curriculum
-{
-    position: relative;
-}
 
 /*changes all links*/
 a {
@@ -151,6 +143,15 @@ a {
 
 .uppercase {
     text-transform: uppercase;
+}
+/*should change the color, doesn't*/
+.text_default_color
+{
+    color: white;
+}
+.text_default_color:hover
+{
+    color: orange;
 }
 
 .block_two {
@@ -208,9 +209,17 @@ a {
 {
     display: none;
 }
-h4
+.black
 {
-    font-size: 3rem;
-    font-weight: 600;
+    color: black;
 }
+.block_three
+{
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: contain;
+    padding: 0rem 15rem;
+}
+
 
