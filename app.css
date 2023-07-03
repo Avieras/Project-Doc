@@ -142,7 +142,6 @@ a {
 .uppercase {
     text-transform: uppercase;
 }
-/*should change the color, doesn't*/
 .text_default_color
 {
     color: white;
@@ -241,13 +240,12 @@ a {
     padding: 1rem 0;
 }
 
-/*continue block four*/
 .block_four
 {
     display: flex;
     flex-flow: column;
     gap: 1rem;
-    padding: 8rem;
+    padding: 0rem;
 }
 .imgalignment
 {
@@ -295,3 +293,58 @@ a {
     align-items: center;
     justify-items: center;
 }
+
+/*continue block five*/
+.block_five
+{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 0rem;
+}
+
+.block_five>.text{
+
+    display: grid;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: contain;
+    padding: 10rem 15rem;
+    
+}
+.block_five >text > div
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+.block_five>.text>img {
+    height: 15rem;
+    grid-row: 1;
+    grid-column: 2;
+    position: relative;
+    right: -100px;
+    top: 20px;
+    
+}
+.blue
+{
+    color: #0180B5;
+}
+/*designe of the button*/
+.button {
+    display: grid;
+    padding: 0rem 55rem;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    grid-row: 1;
+    grid-column: 1;
+    grid-template-columns: min-content 1fr auto;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+
