@@ -25,37 +25,40 @@ main {
     flex-flow: column;
 }
 
-footer {
-    grid-row: 3;
-    grid-column: 1;
-    min-height: 100px;
-    background-color: #222222;
-}
-
 /*header values*/
 header {
     grid-row: 1;
     grid-column: 1;
     display: grid;
     grid-template-columns: min-content 1fr auto;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     background-color: #0180B5;
     padding: 2rem 15rem;
     gap: 2rem;
 }
+.icons
+{
+    gap: 1rem;
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    justify-self: end;
+}
 
 .headerimg {
     position: relative;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 1 / span 2;
 }
 
 .headerinfo {
     font-size: large;
     word-spacing: 25px;
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .headerinfospecial {
@@ -411,12 +414,11 @@ a {
 .distance {
     margin-left: 150;
 }
-.logo
-{
+
+.logo {
     margin-top: 200;
     margin-left: auto;
     image-rendering: pixelated;
     width: 300x;
     height: 150px;
 }
-
