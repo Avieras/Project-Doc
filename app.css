@@ -35,8 +35,15 @@ header {
     align-items: center;
     background-color: #0180B5;
     padding: 2rem 15rem;
-    gap: 2rem;
+    gap: 1rem;
 }
+
+header * {
+    margin: 0;
+    padding: 0;
+}
+
+
 .icons
 {
     gap: 1rem;
@@ -46,6 +53,24 @@ header {
     flex-flow: row;
     list-style: none;
     justify-self: end;
+    font-size: 1.5rem;
+}
+
+.icons > li > a {     
+    display: flex;  
+    background-color: white;
+    border-radius: 25%;
+    border-width: 0;
+    padding: 0.5rem;
+}
+.icons > li > a:hover {   
+    background-color: orange;
+}
+
+.icons > li > a > img
+{
+    height: 1em;
+    aspect-ratio: 1;
 }
 
 .headerimg {
@@ -238,6 +263,12 @@ a {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     padding: 1rem 0;
+}
+
+.dropdown > li > a > img {
+    height: 1em;
+    aspect-ratio: 1;
+    float: right;
 }
 
 .block_four {
