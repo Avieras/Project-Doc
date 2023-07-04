@@ -281,7 +281,7 @@ a {
     z-index: 1000;
 }
 
-.block_four > .imgalignment > a {
+.block_four>.imgalignment>a {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
@@ -303,23 +303,23 @@ a {
 }
 
 .block_five p {
-   color: black;
-   font-size: 17px;
+    color: black;
+    font-size: 17px;
 }
 
-.block_five > .text {
+.block_five>.text {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr auto;
     gap: 5rem;
 }
 
-.block_five > text > div {
+.block_five>text>div {
     grid-row: 1;
     grid-column: 1;
 }
 
-.block_five > .text > img {
+.block_five>.text>img {
     height: 15rem;
     grid-row: 1;
     grid-column: 2;
@@ -341,3 +341,82 @@ a {
     cursor: pointer;
     padding: 1rem 2rem;
 }
+
+/*block six continue*/
+.block_six {
+    display: flex;
+    flex-flow: column;
+    gap: 5rem;
+    padding: 4rem 15rem;
+}
+
+.background_img {
+    background-image: url(/assets/zaehne_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: contain;
+    padding: 5rem 15rem;
+}
+
+.block_six>.bottom {
+    display: flex;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.block_six h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.block_six h4 {
+    margin-top: 20;
+    margin-bottom: 30;
+}
+
+.block_six p {
+    margin-top: 20;
+}
+
+.block_six br {
+    margin-bottom: 10;
+}
+
+.black_background {
+    background-color: #222222;
+}
+
+.orange {
+    color: orange
+}
+
+.block_six>.carousel {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.list {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.distance {
+    margin-left: 150;
+}
+.logo
+{
+    margin-top: 200;
+    margin-left: auto;
+    image-rendering: pixelated;
+    width: 300x;
+    height: 150px;
+}
+
